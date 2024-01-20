@@ -1,1 +1,135 @@
-<h1>[WIP] Working on creating this website</h1>
+<div 
+    name="translate-v0" 
+    translate-text="WIP"
+    style="display: flex; align-items: center; justify-content: center; padding: 20px; font-size: 24px; color: #8BE9FD;"
+>
+    [WIP] Trabalhando neste site pessoal
+</div>
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./index.css"></link>
+        <script async type="module" src="./index.js"></script>
+    </head>
+
+    <body>
+        <div class="top-side-menu">
+            <div class="contacts-container">
+                <a 
+                    href="https://github.com/vitor-manoel"
+                    target="_blank"
+                >
+                    <img
+                        class="contact-icon"
+                        src="./assets/icons8-github.svg"
+                    />
+                </a>
+                <a 
+                    href="https://www.instagram.com/vmty.silva/"
+                    target="_blank"
+                >
+                    <img
+                        class="contact-icon"
+                        src="./assets/icons8-instagram.svg"
+                    />
+                </a>
+                <a 
+                    href="https://www.linkedin.com/in/vitor-manoel-silva/"
+                    target="_blank"
+                >
+                    <img 
+                        class="contact-icon"
+                        src="./assets/icons8-linkedin.svg"
+                    />
+                </a>
+                <a 
+                    href="https://wa.me/5513981558041"
+                    target="_blank"
+                >
+                    <img 
+                        class="contact-icon"
+                        src="./assets/icons8-whatsapp.svg"
+                    />
+                </a>
+            </div>
+
+            <div class="anchors-menu">
+                *
+                <a 
+                    class="anchor-item"
+                    href="#about-me"
+                    name="translate-v0" 
+                    translate-text="about_me"
+                >
+                    Sobre mim
+                </a>
+                *
+                <a 
+                    class="anchor-item"
+                    href="#academic-background"
+                    name="translate-v0" 
+                    translate-text="academic_background"
+                >
+                    Formação
+                </a>
+                *
+            </div>
+
+            <div class="languages-container">
+                <img
+                    name="pt-br"
+                    src="./assets/pt-br.png"
+                    class="language-icon"
+                    onclick="translate_page({ language: 'pt-br' })"
+                />
+                <img
+                    name="en-us"
+                    src="./assets/en-us.png"
+                    class="language-icon"
+                    onclick="translate_page({ language: 'en-us' })"
+                />
+            </div>
+        </div>
+
+        <div class="content-body">
+            <div 
+                id="about-me" 
+                class="about-me"
+            >
+                <div 
+                    name="translate-v0" 
+                    translate-text="about_me"
+                >
+                    Sobre mim
+                </div>
+                <div class="profile-container">
+                    <img 
+                        class="profile-photo"
+                        src="./assets/profile-photo.jpeg"
+                        width="320px"
+                        height="auto"
+                    />
+                    <div
+                        class="profile-data"
+                    >
+                        <p>Vitor Manoel</p>
+                        <p>vitor@manoel.dev.br</p>
+                    </div>
+                </div>
+            </div>
+
+            <div 
+                id="academic-background"
+                class="academic-background"
+            >
+                <div
+                    name="translate-v0" 
+                    translate-text="academic_background"
+                >
+                    Formação
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

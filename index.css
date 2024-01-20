@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    background-color: #44475A;
+    font-family: 'Monaco';
+    font-weight: lighter;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top-side-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 58px;
+    background-color: #282A36;
+    padding: 5px 24px 5px 24px;
+}
+
+.contacts-container {
+    display: flex;
+    gap: 8px;
+}
+
+.contact-icon {
+    width: 48px;
+    height: auto;
+    cursor: pointer;
+}
+
+.contact-icon:hover {
+    margin-top: -5px;
+}
+
+.anchors-menu {
+    color: #F8F8F2;
+}
+
+.anchor-item {
+    color: #BD93F9;
+}
+
+.languages-container {
+    display: flex;
+    gap: 10px;
+}
+
+.language-icon {
+    width: 28px;
+    height: auto;
+    cursor: pointer;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    border: #F8F8F2 1px solid;
+    border-radius: 42px;
+}
+
+.language-icon:hover, .active-language {
+    -webkit-filter: none;
+    filter: none;
+}
+
+.content-body {
+    height: 100%;
+    overflow: auto;
+}
+
+.body-item-block {
+    padding: 20px;
+}
+
+.about-me {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    color: #F8F8F2;
+}
+
+.profile-photo {
+    border-radius: 320px;
+    pointer-events: none;
+}
+
+.profile-data {
+    text-align: center;
+}
+
+.academic-background {
+    padding: 20px;
+    height: 800px;
+    color: #F8F8F2;
+}
+
+@media screen and (max-width: 620px) {
+    .about-me {
+        flex-direction: column-reverse;
+    }
+}
